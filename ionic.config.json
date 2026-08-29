@@ -1,0 +1,7 @@
+{
+  "name": "user-hub",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
