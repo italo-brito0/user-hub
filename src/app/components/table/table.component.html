@@ -1,0 +1,21 @@
+<p>oi</p>
+<ion-grid>
+  <ion-row>  
+    <ion-col>ID</ion-col>
+    <ion-col>Nome</ion-col>
+    <ion-col>Idade</ion-col>
+  </ion-row>
+
+  <!-- <p></p> -->
+
+  @for (user of listaUsers; track user.id) {
+    <ion-row>
+      <ion-col> {{ user.id }} </ion-col>
+      <ion-col> {{ user.nome }} </ion-col>
+      <ion-col> {{ user.idade }} </ion-col>
+    </ion-row>
+  }
+</ion-grid>
+
+
+
