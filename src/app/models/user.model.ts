@@ -3,3 +3,5 @@ export interface User {
     name: string
     username: string
 }
+
+// a api requer mais modificações aqui 
