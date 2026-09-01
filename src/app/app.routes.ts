@@ -1,7 +1,21 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { TableComponent } from './components/table/table.component';
 
 export const routes: Routes = [
-  { path: "", component: HomeComponent },
+  { 
+    path: "", 
+    redirectTo: "dashboard",
+    pathMatch: "full"
+  },
+  {
+    path: "dashboard",
+    loadComponent: () => 
+      import("./components/dashboard/dashboard.component")
+        .then((m) => m.DashboardComponent)
+  },
+  {
+    path: "users",
+    loadComponent: () => 
+      import("./components/users/users.component")
+        .then((m) => m.UsersComponent)
+  }
 ];
