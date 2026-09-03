@@ -13,15 +13,19 @@
         <ion-col>ID</ion-col>
         <ion-col>Nome</ion-col>
         <ion-col>Username</ion-col>
+        <ion-col>Company name</ion-col>
+        <ion-col>x</ion-col>
     </ion-row>
 
-    <p></p>
+    <p>a</p>
 
     @for (user of users; track user.id) {
         <ion-row>
             <ion-col> {{ user.id }}</ion-col>
             <ion-col> {{ user.name }} </ion-col>
-            <ion-col> {{ user.username }} </ion-col>
+            <ion-col> {{ user.email }} </ion-col>
+            <ion-col> {{ user.company.name }}</ion-col>
+            <ion-col> {{ user.company.catchPhrase }} </ion-col>
         </ion-row>
     }
   </ion-grid>

@@ -1,7 +1,10 @@
 export interface User {
-    id: number
-    name: string
-    username: string
+  id: number;
+  name: string;
+  email: string;
+  company: {
+    name: string;
+    catchPhrase: string;
+    bs: string;
+  };
 }
-
-// a api requer mais modificações aqui 
