@@ -35,6 +35,4 @@ export class UsersComponent  implements OnInit {
   }
 
 
-  // pesquisar sobre signal e como implementar
-
 }
